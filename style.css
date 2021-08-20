@@ -1,3 +1,22 @@
-img {
-    width: 20%;
+#listDiv img {
+  width: 10%;
+}
+#listDiv {
+  display: flex;
+  text-align: row;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+#myPic {
+  width: 20%;
+  border-radius: 50%;
+}
+body {
+  font-family: "STIX Two Text", serif;
+  background-color: #f8edeb;
+  text-align: center;
+}
+#mglPic {
+  width: 40%;
 }
