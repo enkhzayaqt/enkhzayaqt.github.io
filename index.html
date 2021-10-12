@@ -5,66 +5,165 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emma's portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
-    <div> 
-    <h1>Yeah! it's week2 ~^.^~</h1>
-    <img id="myPic" src="./mypic.jpg" alt="Emma's picture" />    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+      <div class="container">
+        <a href="#" class="navbar-brand"> My portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#aboutme" class="nav-link">About me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Work" class="nav-link">Work experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Showcase -->
+    <section class="text-dark p-5 text-center" text-sm-start>
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>
+              Welcome to my first <span class="text-warning">portfolio</span>
+            </h1>
+            <p class="lead my-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              quisquam recusandae quia temporibus, delectus nemo corrupti
+              quaerat molestias nesciunt corporis consequatur dicta veniam
+              accusamus suscipit ipsa sunt omnis soluta exercitationem.
+            </p>
+            <button class="btn btn-primary btn-lg">Contact me</button>
+          </div>
+          <img class="img-fluid" src="./img/womencoding.jpg" alt="mypic" />
+        </div>
+      </div>
+    </section>
+    <div class="jumbotron text-center" style="background-color: lavender">
+      <h1>
+        Yeah! it's week 8,<br />
+        i'm so happy^^
+      </h1>
+      <img id="myPic" src="./mypic.jpg" alt="Emma's picture" />
     </div>
-  <p>Hello, My name is Enkhzaya. You can call me "Emma". <br /> I'm from Mongolia.</p>
+    <p>
+      Hello, My name is Enkhzaya. You can call me "Emma". <br />
+      I'm from Mongolia.
+    </p>
     <img id="mglPic" src="./mgl.jfif" alt="Mongolia" />
-    <div id="listDiv">
-      <div>
-        <h3>If you want to contact me:</h3>
-        <ol>
-          <li><a href="https://www.linkedin.com/in/emma-munkhochir/">Linkedin</a></li>
-          <li>
-            <a
-              href="https://www.goodreads.com/user/show/21172579-enkhzaya-munkh-ochir"
-              >Goodreads</a
-            >
-          </li>
-          <li><a href="https://www.facebook.com/emilin.zaya">Facebook</a></li>
-        </ol>
-      </div>
 
-      <div>
-        <h3>Best books i read in 2021:</h3>
-        <ul #bookList>
-          <li>
-            <a href="https://www.goodreads.com/book/show/30753738-the-choice"
-              >The Choice:
-            </a>
-            by Edith Eger
-          </li>
-          <img src="./theChoice.jpg" alt="The Choice Book cover" />
-          <li>
-            <a href="https://www.goodreads.com/book/show/55520619-greenlights"
-              >Greenlights:
-            </a>
-            by Matthew McConaughey
-          </li>
-          <img src="./greenlights.jpg" alt="Greenlights book cover" />
-          <li>
-            <a href="https://www.goodreads.com/book/show/19063.The_Book_Thief"
-              >The Book Thief
-            </a>
-            by Markus Zusak
-          </li>
-          <img src="./theBookThief.jpg" alt="The Book Thief book cover" />
-        </ul>
-      </div>
+    <div class="container">
+      <h1>Blockquotes</h1>
+      <p>
+        The blockquote element is used to present content from another source:
+      </p>
+      <blockquote>
+        <p>
+          For 50 years, WWF has been protecting the future of nature. The
+          world's leading conservation organization, WWF works in 100 countries
+          and is supported by 1.2 million members in the United States and close
+          to 5 million globally.
+        </p>
+        <footer>From WWF's website</footer>
+      </blockquote>
     </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Contact me:</h3>
+
+          <ol>
+            <li>
+              <a href="https://www.linkedin.com/in/emma-munkhochir/"
+                >Linkedin</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.goodreads.com/user/show/21172579-enkhzaya-munkh-ochir"
+                >Goodreads</a
+              >
+            </li>
+            <li><a href="https://www.facebook.com/emilin.zaya">Facebook</a></li>
+            <li><a href="./secondPage.html">second page</a></li>
+          </ol>
+        </div>
+
+        <div class="col-sm-6">
+          <h3>Best books i read in 2021:</h3>
+          <ul #bookList>
+            <li>
+              <a href="https://www.goodreads.com/book/show/30753738-the-choice"
+                >The Choice:
+              </a>
+              by Edith Eger
+            </li>
+            <img src="./theChoice.jpg" alt="The Choice Book cover" />
+            <li>
+              <a href="https://www.goodreads.com/book/show/55520619-greenlights"
+                >Greenlights:
+              </a>
+              by Matthew McConaughey
+            </li>
+            <img src="./greenlights.jpg" alt="Greenlights book cover" />
+            <li>
+              <a href="https://www.goodreads.com/book/show/19063.The_Book_Thief"
+                >The Book Thief
+              </a>
+              by Markus Zusak
+            </li>
+            <img src="./theBookThief.jpg" alt="The Book Thief book cover" />
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="./script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap"
       rel="stylesheet"
     />
-  </body>
-</html>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

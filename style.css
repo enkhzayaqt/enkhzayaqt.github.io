@@ -1,4 +1,4 @@
-#listDiv img {
+.row img {
   width: 10%;
 }
 #listDiv {
@@ -14,7 +14,7 @@
 }
 body {
   font-family: "STIX Two Text", serif;
-  background-color: #f8edeb;
+  /* background-color: #f8edeb; */
   text-align: center;
 }
 #mglPic {
