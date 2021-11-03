@@ -1,22 +1,86 @@
-.row img {
-  width: 10%;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  color: #222;
 }
-#listDiv {
-  display: flex;
-  text-align: row;
-  text-align: center;
-  justify-content: space-evenly;
+.navbar {
+  padding: 0.8rem;
+}
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+.social a {
+  font-size: 4.5em;
+  margin: 3rem;
+}
+.social a:hover {
+  color: transparent;
+}
+.social a:hover i {
+  color: #d5d5d5;
 }
 
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-goodreads {
+  color: #555;
+}
+
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+}
 #myPic {
-  width: 20%;
+  width: 10%;
   border-radius: 50%;
 }
-body {
-  font-family: "STIX Two Text", serif;
-  /* background-color: #f8edeb; */
+
+.img-container {
   text-align: center;
 }
-#mglPic {
-  width: 40%;
+#pacmanImg {
+  height: 16px;
+  width: auto;
+}
+#about {
+  position: absolute;
+  top: -100px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 200%;
+  }
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .video-container {
+    width: 300px;
+  }
 }

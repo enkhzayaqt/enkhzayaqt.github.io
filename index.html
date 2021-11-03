@@ -5,145 +5,344 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emma's portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
+    <!-- font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/85f74070c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- my css -->
     <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top py-3">
       <div class="container">
-        <a href="#" class="navbar-brand"> My portfolio</a>
+        <a href="#" class="navbar-brand">Home</a>
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
+          data-toggle="collapse"
+          data-target="#navMenu"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse bg-dark" id="navMenu">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="#aboutme" class="nav-link">About me</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#Work" class="nav-link">Work experience</a>
+              <a href="#projects" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-              <a href="#education" class="nav-link">Education</a>
+              <a href="#books" class="nav-link">Books</a>
             </li>
             <li class="nav-item">
-              <a href="map/index.html" class="nav-link">Map</a>
+              <a href="#connect" class="nav-link">Connect</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- Showcase -->
-    <section class="text-dark p-5 text-center" text-sm-start>
-      <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
-          <div>
-            <h1>
-              Welcome to my first <span class="text-warning">portfolio</span>
-            </h1>
-            <p class="lead my-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-              quisquam recusandae quia temporibus, delectus nemo corrupti
-              quaerat molestias nesciunt corporis consequatur dicta veniam
-              accusamus suscipit ipsa sunt omnis soluta exercitationem.
-            </p>
-            <button class="btn btn-primary btn-lg">Contact me</button>
-          </div>
-          <img class="img-fluid" src="./img/womencoding.jpg" alt="mypic" />
-        </div>
-      </div>
-    </section>
-    <div class="jumbotron text-center" style="background-color: lavender">
-      <h1>
-        Yeah! it's week 8,<br />
-        i'm so happy^^
-      </h1>
-      <img id="myPic" src="./mypic.jpg" alt="Emma's picture" />
-    </div>
-    <p>
-      Hello, My name is Enkhzaya. You can call me "Emma". <br />
-      I'm from Mongolia.
-    </p>
-    <img id="mglPic" src="./mgl.jfif" alt="Mongolia" />
 
-    <div class="container">
-      <h1>Blockquotes</h1>
+    <!-- my pic -->
+    <div class="jumbotron text-center">
+      <h1>Emma Munkhochir<br /></h1>
       <p>
-        The blockquote element is used to present content from another source:
+        Hello, My name is Enkhzaya. You can call me "Emma". <br />
+        I'm from Mongolia.
       </p>
-      <blockquote>
-        <p>
-          For 50 years, WWF has been protecting the future of nature. The
-          world's leading conservation organization, WWF works in 100 countries
-          and is supported by 1.2 million members in the United States and close
-          to 5 million globally.
-        </p>
-        <footer>From WWF's website</footer>
-      </blockquote>
+      <img id="myPic" src="img/mypic.jpg" alt="Emma's picture" />
     </div>
 
+    <!-- intro video -->
     <div class="container">
+      <div class="position-relative">
+        <div id="about"></div>
+      </div>
       <div class="row">
-        <div class="col-sm-6">
-          <h3>Contact me:</h3>
-
-          <ol>
-            <li>
-              <a href="https://www.linkedin.com/in/emma-munkhochir/"
-                >Linkedin</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.goodreads.com/user/show/21172579-enkhzaya-munkh-ochir"
-                >Goodreads</a
-              >
-            </li>
-            <li><a href="https://www.facebook.com/emilin.zaya">Facebook</a></li>
-            <li><a href="./secondPage.html">second page</a></li>
-          </ol>
+        <div class="col-md-12 col-xl-6">
+          <h2>Welcome to my first portfolio</h2>
+          <p>
+            Hi, my name is Enkhzaya, you can call me Emma. I’m currently
+            enrolled in professional certification program with MIT for computer
+            programming. So far, I have learned HTML, CSS, JavaScript, and
+            cybersecurity.
+          </p>
+          <p>
+            I’m from Mongolia and currently living in Chicago. I am working as
+            an accountant at CPA office. I love using softwares because they
+            improve our lifes easy. I’ve always interested in how this softwares
+            and programs are working, when I first came to America, I was amazed
+            with the opportunity that created by the advanced technology. I
+            wanted to become part of this technological advancement. That’s why
+            I decided to start learning code. The other reason is, throughout
+            this learning process, I want to develop competitive thinking skills
+            and problem-solving skills. And I’m happy with my progress so far.
+          </p>
+          <a href="#connect" class="btn btn-secondary"> Contact me</a>
         </div>
-
-        <div class="col-sm-6">
-          <h3>Best books i read in 2021:</h3>
-          <ul #bookList>
-            <li>
-              <a href="https://www.goodreads.com/book/show/30753738-the-choice"
-                >The Choice:
-              </a>
-              by Edith Eger
-            </li>
-            <img src="./theChoice.jpg" alt="The Choice Book cover" />
-            <li>
-              <a href="https://www.goodreads.com/book/show/55520619-greenlights"
-                >Greenlights:
-              </a>
-              by Matthew McConaughey
-            </li>
-            <img src="./greenlights.jpg" alt="Greenlights book cover" />
-            <li>
-              <a href="https://www.goodreads.com/book/show/19063.The_Book_Thief"
-                >The Book Thief
-              </a>
-              by Markus Zusak
-            </li>
-            <img src="./theBookThief.jpg" alt="The Book Thief book cover" />
-          </ul>
+        <div class="col-xl-6">
+          <iframe
+            class="video-container"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/IxZ1UZjzVKk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>
+
+    <!-- Projects -->
+    <hr class="dark" />
+    <div class="container-fluid padding" id="projects">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Projects</h1>
+        </div>
+        <hr />
+        <div class="col-12">
+          <p class="lead">
+            Here are three of my collection of work that i have been working on
+            in the MIT fullstack course.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Three column section -->
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-xs-12 col-md-4 mb-4">
+          <div class="bg-light p-4 shadow border">
+            <div class="img-container">
+              <img id="pacmanImg" src="img/pacman.png" alt="pacman" />
+            </div>
+            <h3>Pacman</h3>
+            <p>Pacman project is ....</p>
+            <a
+              href="https://enkhzayaqt.github.io/Pacman-project/ "
+              class="btn btn-primary"
+              target="_blank"
+              >Try it</a
+            >
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 mb-4">
+          <div class="bg-light p-4 shadow border">
+            <i class="fas fa-eye" aria-hidden="true"></i>
+            <i class="fas fa-eye" aria-hidden="true"></i>
+
+            <h3>Eye movement</h3>
+            <p>Eye movement project is ....</p>
+
+            <a
+              href="https://enkhzayaqt.github.io/Eye-movement/"
+              class="btn btn-primary"
+              target="_blank"
+              >Try it</a
+            >
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 mb-4">
+          <div class="bg-light p-4 shadow border">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+
+            <h3>Bus tracker</h3>
+            <p>Bus tracker project is ....</p>
+            <a
+              href="https://enkhzayaqt.github.io/bus-tracker/"
+              class="btn btn-primary"
+              target="_blank"
+              >Try it</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- book -->
+    <div class="container my-5 py-5" id="books">
+      <div class="row text-center mb-5">
+        <div class="col">
+          <h1 class="display-4">Book recommendation</h1>
+        </div>
+      </div>
+      <div class="row justify-content-around p-5 p-sm-0">
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="img/theChoice.jpg"
+              alt="the choice"
+            />
+            <div class="card-body">
+              <h4 class="card-title">The choice</h4>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+              </p>
+              <a
+                href="https://www.goodreads.com/book/show/30753738-the-choice"
+                class="btn btn-outline-secondary"
+                target="_blank"
+                >Read review</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="img/greenlights.jpg"
+              alt="greenlight"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Greenlights</h4>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+              </p>
+              <a
+                href="https://www.goodreads.com/book/show/30753738-the-choice"
+                class="btn btn-outline-secondary"
+                target="_blank"
+                >Read review</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="img/theBookThief.jpg"
+              alt="theBookThief"
+            />
+            <div class="card-body">
+              <h4 class="card-title">The Book thief</h4>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+              </p>
+              <a
+                href="https://www.goodreads.com/book/show/30753738-the-choice"
+                class="btn btn-outline-secondary"
+                target="_blank"
+                >Read review</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="img/theGoldfinch.jpg"
+              alt="theGoldfinch"
+            />
+            <div class="card-body">
+              <h4 class="card-title">The Goldfinch</h4>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+              </p>
+              <a
+                href="https://www.goodreads.com/book/show/30753738-the-choice"
+                class="btn btn-outline-secondary"
+                target="_blank"
+                >Read review</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- My philosophy -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-6 mb-4">
+          <h2>My philosophy</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iure
+            molestias eveniet? Fuga est numquam iure odit architecto ullam
+            dolorem, id nihil iusto qui adipisci illo quo, officia itaque earum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+            necessitatibus itaque ad ea, est quidem voluptatem architecto omnis
+            neque consequatur facilis a quia sint praesentium quod sed expedita
+            cumque maiores.
+          </p>
+          <a href="#" class="btn btn-secondary"> Read more</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="img/feelgood.jpg" alt="feelgood" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div class="container my-5" id="connect">
+      <div class="row text-center">
+        <div class="col-12">
+          <h1>Connect</h1>
+        </div>
+        <div class="col-lg-12 social">
+          <a href="https://www.facebook.com/emilin.zaya" target="_blank">
+            <i class="fab fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/emma-munkhochir/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.goodreads.com/user/show/21172579-enkhzaya-munkh-ochir"
+            target="_blank"
+          >
+            <i class="fab fa-goodreads"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid bg-dark text-white py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h4>Email:</h4>
+            <hr class="light d-none d-lg-block" />
+            <h4>emma.munkhochir@gmail.com</h4>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h4>Phone number:</h4>
+            <hr class="light d-none d-lg-block" />
+            <h4>(708) 475-7690</h4>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h4>Address:</h4>
+            <hr class="light d-none d-lg-block" />
+            <h4>4700 Arbor dr, Rolling Meadows IL 60008</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- links -->
     <script src="./script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -152,21 +351,21 @@
       href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap"
       rel="stylesheet"
     />
+    <!-- bootstrap version 4 -->
 
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+
+    <script>
+      var player = new MediaElementPlayer("#player1");
+    </script>
   </body>
 </html>
